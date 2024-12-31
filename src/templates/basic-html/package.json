@@ -1,0 +1,10 @@
+{
+  "name": "basic",
+  "private": true,
+  "scripts": {
+    "start": "node ./index.mjs"
+  },
+  "dependencies": {
+    "servor": "4.0.2"
+  }
+}
