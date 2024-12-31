@@ -35,27 +35,27 @@ npm run dev
 
 ```markdown
 ┌─────────────────────────────────────────────────────┐
-│ ● ● ●                                               │
+│ ● ● ● │
 ├───────────────────────────┬─────────────────────────┤
-│                           │                         │
-│                           │                         │
-│                           │                         │
-│                           │                         │
-│                           │       Code Editor       │
-│                           │                         │
-│                           │                         │
-│                           │                         │
-│                           │                         │
-│          Content          ├─────────────────────────┤
-│                           │                         │
-│                           │                         │
-│                           │  Preview & Boot Screen  │
-│                           │                         │
-│                           │                         │
-│                           ├─────────────────────────┤
-│                           │                         │
-│                           │        Terminal         │
-│                           │                         │
+│ │ │
+│ │ │
+│ │ │
+│ │ │
+│ │ Code Editor │
+│ │ │
+│ │ │
+│ │ │
+│ │ │
+│ Content ├─────────────────────────┤
+│ │ │
+│ │ │
+│ │ Preview & Boot Screen │
+│ │ │
+│ │ │
+│ ├─────────────────────────┤
+│ │ │
+│ │ Terminal │
+│ │ │
 └───────────────────────────┴─────────────────────────┘
 ```
 
@@ -67,7 +67,6 @@ A tutorial consists of parts, chapters, and lessons. For example:
   - Chapter 1: Introduction
     - Lesson 1: Welcome!
     - Lesson 2: Why Vite?
-    - …
   - Chapter 2: Your first Vite project
 - Part 2: CLI
   - …
@@ -122,8 +121,8 @@ The metadata file (`meta.md`) of parts, chapters, and lessons do not contain any
 
 Here is an overview of the properties that can be used as part of the Front Matter:
 
-| Property        | Required | Type    | Inherited | Description   |
-| --------------- | -------- | ------- | --------- | ------------- |
+| Property        | Required | Type                        | Inherited | Description                                                                                                                                           |
+| --------------- | -------- | --------------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | type            | ✅       | `part \| chapter \| lesson` | ❌        | The type of the metadata.                                                                                                                             |
 | title           | ✅       | `string`                    | ❌        | The title of the part, chapter, or lesson.                                                                                                            |
 | slug            |          | `string`                    | ❌        | Let’s you customize the URL pathname which is `/:partSlug/:chapterSlug/:lessonSlug`.                                                                  |
