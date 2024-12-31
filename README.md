@@ -122,8 +122,8 @@ The metadata file (`meta.md`) of parts, chapters, and lessons do not contain any
 
 Here is an overview of the properties that can be used as part of the Front Matter:
 
-| Property        | Required | Type                        | Inherited | Description                                                                                                                                           |
-| --------------- | -------- | --------------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Property        | Required | Type    | Inherited | Description   |
+| --------------- | -------- | ------- | --------- | ------------- |
 | type            | ✅       | `part \| chapter \| lesson` | ❌        | The type of the metadata.                                                                                                                             |
 | title           | ✅       | `string`                    | ❌        | The title of the part, chapter, or lesson.                                                                                                            |
 | slug            |          | `string`                    | ❌        | Let’s you customize the URL pathname which is `/:partSlug/:chapterSlug/:lessonSlug`.                                                                  |
