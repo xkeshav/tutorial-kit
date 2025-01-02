@@ -15,6 +15,32 @@
         "focus": false,
         "panel": "shared"
       }
+    },
+    {
+      "label": "Chapter Boilerplate",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "${workspaceFolder}${pathSeparator}.vscode${pathSeparator}scripts${pathSeparator}createBoilerplate.cjs", "${input:chapterName}"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "revealProblems": "onProblem",
+        "panel": "dedicated",
+        "reveal": "silent",
+        "echo": true,
+        "focus": false,
+        "clear": true,
+        "close": true,
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "chapterName",
+      "description": "Name your chapter",
+      "default": "Chapter One",
+      "type": "promptString"
     }
   ]
 }

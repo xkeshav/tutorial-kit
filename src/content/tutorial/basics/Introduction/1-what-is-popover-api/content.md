@@ -10,7 +10,7 @@ focus: /index.html
 This is a tutorial for popover
 :::
 
-Popover API is new addition to CSS and it solve the issue of opening modal with css only; no js required.
+Popover API is new addition to CSS and it solve the issue of opening page over the top ( just like modal but with better accessibility and features) with css only; no js required.
 
 below is HTML code which works
 
