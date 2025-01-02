@@ -32,7 +32,8 @@
         "focus": false,
         "clear": true,
         "close": true,
-      }
+      },
+      "detail": "This will  create a folder and few files within, inside src/components folder."
     }
   ],
   "inputs": [
