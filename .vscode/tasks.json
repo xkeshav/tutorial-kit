@@ -6,14 +6,16 @@
       "type": "shell",
       "command": "node",
       "args": [
-        ".vscode/createLesson.js"
+        "${workspaceFolder}${pathSeparator}.vscode${pathSeparator}scripts${pathSeparator}createLesson.js", "${input:lessonName}"
       ],
       "problemMatcher": [],
       "presentation": {
-        "echo": true,
+        "revealProblems": "onProblem",
+        "panel": "dedicated",
         "reveal": "always",
+        "echo": true,
         "focus": false,
-        "panel": "shared"
+        "close": false,
       }
     },
     {
@@ -41,6 +43,12 @@
       "id": "chapterName",
       "description": "Name your chapter",
       "default": "Chapter One",
+      "type": "promptString"
+    },
+    {
+      "id": "lessonName",
+      "description": "Name your lesson",
+      "default": "Lesson One",
       "type": "promptString"
     }
   ]
