@@ -6,7 +6,10 @@
       "type": "shell",
       "command": "node",
       "args": [
-        "${workspaceFolder}${pathSeparator}.vscode${pathSeparator}scripts${pathSeparator}createLesson.js", "${input:lessonName}"
+        "--inspect-brk",
+        "${workspaceFolder}${pathSeparator}.vscode${pathSeparator}scripts${pathSeparator}createLesson.js", 
+        "${input:tutorialType}", 
+        "${input:chapterName}"
       ],
       "problemMatcher": [],
       "presentation": {
@@ -16,14 +19,15 @@
         "echo": true,
         "focus": false,
         "close": false,
-      }
+      },
+      "detail": "Create a lesson inside src/tutorials folder."    
     },
     {
       "label": "Chapter Boilerplate",
       "type": "shell",
       "command": "node",
       "args": [
-        "${workspaceFolder}${pathSeparator}.vscode${pathSeparator}scripts${pathSeparator}createBoilerplate.cjs", "${input:chapterName}"
+        "${workspaceFolder}${pathSeparator}.vscode${pathSeparator}scripts${pathSeparator}createBoilerplate.cjs", "${input:folderName}"
       ],
       "problemMatcher": [],
       "presentation": {
@@ -40,16 +44,23 @@
   ],
   "inputs": [
     {
-      "id": "chapterName",
-      "description": "Name your chapter",
-      "default": "Chapter One",
+      "id": "folderName",
+      "description": "Name your Folder",
+      "default": "Folder One",
       "type": "promptString"
     },
     {
-      "id": "lessonName",
-      "description": "Name your lesson",
-      "default": "Lesson One",
-      "type": "promptString"
+      "id": "tutorialType",
+      "description": "what need to build",
+      "options": ["part", "chapter", "lesson"],
+      "default": "lesson",
+      "type": "pickString",
+    },
+    {
+      "id": "chapterName",
+      "type": "promptString",
+      "description": "Name your Course.",
+      "default": "lesson-one"
     }
   ]
 }

@@ -7,6 +7,8 @@ import { dirname } from 'path';
 const args = process.argv;
 const inputName = args.slice(2).pop() || 'alpha';
 
+const [nodePath, scriptPath, tutorialType, chapterName] = process.argv;
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
